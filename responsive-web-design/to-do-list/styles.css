@@ -1,0 +1,57 @@
+body {
+    background-color: #96f2d7;
+    font-family: 'Caveat', sans-serif;
+    }
+  
+  h1 {
+    text-align: center;
+    padding: 25px 0 0;
+    font-size: 40px;
+  }
+  
+  hr {
+    margin: 0 100px;
+    border: 2px solid orange;
+  }
+  
+  .todo-list {
+    padding: 0 100px;
+    font-size: 30px;
+  }
+  
+  li {
+    margin-bottom: 25px;
+    list-style-type: none;
+  }
+  
+  .sub-item ::marker {
+    content: "— ";
+  }
+  
+  label {
+    padding-left: 7px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:link {
+    color: #ff8c00;
+  }
+  
+  a:visited {
+    color: aqua;
+  }
+  
+  a:hover {
+    color: #c92a2a;
+  }
+  
+  a:focus {
+    outline: 2px solid #c92a2a;
+    }
+  
+  a:active {
+    color: blue;
+  }
