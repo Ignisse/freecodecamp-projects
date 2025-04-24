@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Customer Survey</title>
+</head>
+<body>
+ <div id="intro">
+  <h1 id="title">Customer Survey</h1>
+  <p id="description">We value your feedback. Please fill out the form below to help us improve!</p>
+  </div>
+  
+  <form id="survey-form">
+    <formfield>
+
+    <!-- Name Field -->
+    <label id="name-label" for="name">Name:</label>
+    <input type="text" id="name" name="name" required placeholder="John Doe">
+    
+    <!-- Email Field -->
+    <label id="email-label" for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="your@email.com">
+    
+    <!-- Age Field -->
+    <label id="number-label" for="number">Age:</label>
+    <input type="number" id="number" name="age" min="13" max="120" placeholder="Your age">
+    
+    <!-- Dropdown -->
+    <label for="dropdown">Are you a:</label>
+    <select id="dropdown" name="customer-type">
+      <option value="" >Choose an option</option>
+      <option value="new">New Customer</option>
+      <option value="returning">Returning Customer</option>
+      <option value="vip">VIP Customer</option>
+    </select>
+    </formfield>
+  
+    <!-- Radio Buttons -->
+    <formfield> <legend>How satisfied are you with our service?</legend>
+      <label for="very-satisfied">
+        <input type="radio" name="satisfaction" value="very-satisfied" id="very-satisfied" class="inline" checked> Very Satisfied
+    </label>
+    <label for="satisfied">
+      <input type="radio" name="satisfaction" value="satisfied" id="satisfied" class="inline"> Satisfied
+    </label>
+    <label>
+      <input type="radio" name="satisfaction" value="neutral"  class="inline"> Neutral
+    </label>
+    <label>
+      <input type="radio" name="satisfaction" value="unsatisfied" class="inline"> Unsatisfied
+    </label>
+  </formfield>
+
+    <!-- Checkboxes for Preferences -->
+    <formfield> <legend>What features do you value the most? (Select all that apply):</legend>
+    <label for="quality">
+      <input type="checkbox" id="quality" name="features" value="quality" class="inline"> Quality
+    </label>
+    <label for="price">
+      <input type="checkbox" id="price" name="features" value="price" class="inline"> Price
+    </label>
+    <label for="customer-support">
+      <input type="checkbox" id="customer-support" name="features"  value="customer-support" class="inline"> Customer Support
+    </label>
+    <label for="delivery-time">
+      <input type="checkbox" id="delivery-time" name="features" value="delivery-time" class="inline" > Delivery Time
+    </label>
+    </formfield>
+
+    <!-- Comments -->
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments" rows="4" placeholder="Let us know your thoughts..."></textarea>
+    
+    <!-- Submit Button -->
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
